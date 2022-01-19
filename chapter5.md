@@ -285,6 +285,7 @@ _short key, not used anymore_
 - use in online elections?
 
 #### 5.7.4 Elliptic Curve Cyptography
+- _this seems pretty cool! what is the downside for the simplicity?_
 - discrete logarithms on elliptic curve
 - less computation and shorter variables
 - bilinear paring - public key is name

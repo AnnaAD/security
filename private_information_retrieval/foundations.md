@@ -143,6 +143,8 @@ Generic Transformation: PIR scheme in one round
 
 ## Project Idea
 
+Implement the 2 server basic construction as a proof of concept.
+
 Implement basic PIR with homomorphic encryption
 - use https://github.com/ibarrond/Pyfhel library
 - have a basic matrix representing the data
@@ -156,3 +158,9 @@ Implement basic PIR with homomorphic encryption
   - if n is big wouldn't it be worth it? esp. if operations don't need fast retrieval?
   - the user would send 2sqrt(n) bits of communications, the server responds with 1.
     - communication would still be sqrt(n) then... hahaha
+
+- _could you use the idea of d dimensional coordinates with homomorphic encryption to get n^(1/d) communication?_
+  - currently since matrix is 2d, we get n^1/2 communication. vectors of size n^1/d for extracting a d-1 dimension slice of the data vector math?
+  - I think the server would respond with (d-1) sized data, when d = 2, this means that returned it n^1/2 and user sends n^1/2
+  - if sent however k * n^(1/d) sized user data, meaning k of these bit matrix to specify a dimension then the server would also respond with less data.
+    - server sends back (d-k) dimension. when k = d-1, sends back n^(1/d).  

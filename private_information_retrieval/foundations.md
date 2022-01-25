@@ -138,8 +138,34 @@ Generic Transformation: PIR scheme in one round
 
 ## Private Block Retrieval
 
+- to retireve an l bit block, can preform the 1 bit protocol l times.
 
+protocol to get single bit with sum of answers mod 2:
+- partition bits into m bits of n-1 bits each. N = m * (n-1)
+- bit positions represented by coors in n and m, user sends to server n,1 m times to each server
+- each server adds and takes mod 2 for each of the bytes it would have sent for the m invocations 
+- gets the single bit back for x_i
 
+- user can send m * a(n) bit requests, and each server responds with l bits (applying homomorphic function to summation)
+- _this confuses me... how does this extend the single bit to the many bit block?_
+
+- cases where length of record is longer than number of records achieved (not square table)
+- n <= l -> 4l communication complexity
+- n <= l^2/4 -> 8l communication complexity
+
+- relalistic sizes for d, fewer servers -> slightly worse complexity, but realalistic
+
+## Lower Bounds
+
+- obvious lower communication bound: log n bits which holds for any number of servers
+
+- single server case
+  - n bits must be relayed with one server
+  - (information-theoretic) privacy constraint
+    - without PIR: log_2(n + 1) bits are enough (user sends i (log_2(n)) and gets back xi). 
+
+Linear Summation Queries with Single Bit Answers
+- query needs n - 1 bits to describe a set that looks random, set of all responses from server 2^(n-1) 
 
 ## Project Idea
 

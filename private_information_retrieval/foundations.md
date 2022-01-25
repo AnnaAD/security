@@ -163,4 +163,6 @@ Implement basic PIR with homomorphic encryption
   - currently since matrix is 2d, we get n^1/2 communication. vectors of size n^1/d for extracting a d-1 dimension slice of the data vector math?
   - I think the server would respond with (d-1) sized data, when d = 2, this means that returned it n^1/2 and user sends n^1/2
   - if sent however k * n^(1/d) sized user data, meaning k of these bit matrix to specify a dimension then the server would also respond with less data.
-    - server sends back (d-k) dimension. when k = d-1, sends back n^(1/d).  
+    - server sends back (d-k) dimension. when k = d-1, sends back n^(1/d).
+
+user has power over database servers in the sense that access control is not possible? 

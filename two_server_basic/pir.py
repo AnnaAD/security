@@ -47,7 +47,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Runs a demo of PIR scheme using two servers, basic scheme.')
 parser.add_argument('size', metavar='N', type=int, nargs="?", default=1000,
-                    help='the size of the data to work on')
+                    help='the number of data elements in data list to work on')
 parser.add_argument('index', metavar = 'i', type = int, nargs = "?", default = 0, help = "index for user to request data at")
 parser.add_argument('--verbose', action = "store_true",
                     help='print out more information')

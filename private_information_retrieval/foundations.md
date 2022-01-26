@@ -192,3 +192,4 @@ Implement basic PIR with homomorphic encryption
     - server sends back (d-k) dimension. when k = d-1, sends back n^(1/d).
 
 user has power over database servers in the sense that access control is not possible? 
+- nope! could have identity vector multiplied on the query, that zeros out forbidden row req.

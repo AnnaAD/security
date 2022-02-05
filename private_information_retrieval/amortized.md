@@ -131,6 +131,11 @@ Improvements
 - two servers to one server with homomorphic encryption on the query
 
 
-### Puncturable Pseudorandom Sets
+## Puncturable Pseudorandom Sets
 
+- puncturable PRF
+- allow removal of items from set, use PRF to represent a set with a short key.
 
+### Definitions
+- gen, punc, eval
+- efficiency, correctness, security

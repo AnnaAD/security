@@ -1,6 +1,6 @@
 # Security
 
-In this repo I did some experimentation and organized my learning about various security engineering topics.
+In this repo I did some experimentation and organized my learning about various system security engineering topics.
 
 ## Ross Anderson's Security Engineering Textbook
  
